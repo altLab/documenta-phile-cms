@@ -18,7 +18,7 @@
     RewriteEngine On
 
     # Change this path, if you have installed PhileCMS in a subdirectory of the website root.
-    # RewriteBase /
+    RewriteBase /d/
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -30,3 +30,7 @@
 # directory listings are disabled
 #####################################
 Options -Indexes
+RewriteCond %{HTTP_HOST} ^documenta\.altlab\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.documenta\.altlab\.org$
+RewriteRule ^/?$ "altlab\.org\/d\/" [R=301,L]
+
