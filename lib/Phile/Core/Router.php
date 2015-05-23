@@ -47,7 +47,8 @@ class Router {
 		// resolve root-relative URL-path
 		$baseUrl = $this->getBaseUrl();
 		$basePath = $this->getUrlPath($baseUrl);
-		$url = str_replace($basePath, '', $url);
+		// Dinix BUG! $url = str_replace($basePath, '', $url);
+                $url = substr($url, strlen($basePath));
 		$url = ltrim($url, '/');
 
 		$url = urldecode($url);
