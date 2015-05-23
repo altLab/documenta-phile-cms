@@ -5,7 +5,7 @@
 $config = array();
 // run the generator.php file or fill this with a long string
 // must not be empty
-$config['encryptionKey'] = '';
+$config['encryptionKey'] = 'FIXME';
 $config['site_title']    = 'altLab Documenta'; // Site title
 $config['theme']         = 'altlab'; // Set the theme
 
