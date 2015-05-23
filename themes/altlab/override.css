@@ -1,0 +1,8 @@
+/*!
+ * Any css here can override the base css in css/bootstrap.min.css
+*/
+
+/* Make the dropdown on hover*/
+ul.nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
