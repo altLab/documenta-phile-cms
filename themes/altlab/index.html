@@ -45,7 +45,7 @@
                       {% set title = item.uri %}
                     {% endif %}
   		    {% if item.children|length > 0 and i % 100 > 0 %}
-			<li id="subdropdown.{{i}}" class="dropdown.{{ i }}">
+			<li id="dropdown.{{i}}" class="dropdown">
 			<a href="{{ item.url }}" class= "dropdown-toggle" data-toggle="dropdown.{{ i }}" role="button" aria-expanded="false">{{ title }}<span class="caret"></span></a>
 		    {% elseif item.children|length > 0 and i % 100 == 0 %}
 			<li id="dropdown.{{i}}" class="dropdown">
